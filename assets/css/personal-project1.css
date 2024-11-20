@@ -146,3 +146,23 @@ margin-top: 15px;
         border-radius: 5px;
       }
 
+.portfolio {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio img {
+  width: 180px;
+  height: 240px;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column; /* 텍스트를 세로로 정렬 */
+}
+.personal{
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+

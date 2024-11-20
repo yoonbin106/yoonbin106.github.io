@@ -11,7 +11,7 @@ layout:
 tabs:
   # format: <filename_without_extension>: <value>
   home: HOME
-  about: INTRODUCE
+  about: ABOUT ME
   categories: CATEGORIES
   tags: TAGS
   archives: ARCHIVES

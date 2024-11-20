@@ -4,16 +4,75 @@ icon: fas fa-info-circle
 order: 4
 ---
 <div class="portfolio">
-  <img src="assets/img/favicons/증명사진누끼.png" alt="증명사진누끼" />
+  <img src="assets/img/favicons/증명사진누끼.png" alt="증명사진누끼" style="border:3px solid #cccccc" />
   <div class="text-wrapper">
-    <span style=" margin-left:25px; font-size:50px; color:white;">윤성빈</span>
-    <span style="font-size:50px; margin-left:30px; color:white;">Yoon Seong-Bin</span>
-    <span style="margin-left:25px; font-size:20px;">"맡은 일은 밤을 새서라도 끝내겠습니다!"</span>
+    <span style=" margin-left:25px; font-size:50px; color:white; font-weight:bold;">윤성빈<span style="font-size:25px; margin-left:10px; color:#cccccc; font-weight:normal;">Yoon Seong-Bin</span></span>
+    <span style="margin-left:25px; font-size:30px; color:rgb(138, 180, 248); font-weight:bold;">"맡은 일은 밤을 새서라도 끝내겠습니다!"</span>
   </div>
 </div>
 
 ---
-  <div style="border-bottom:1px solid white;">
-  <span class="personal">인적사항</span><span style="margin-left:10px">PERSONAL DETAIL</span>
-  </div>
 
+<div class="underline-container1">
+  <span class="personal">인적사항</span>
+  <span style="margin-left:10px">Personal Detail</span>
+</div>
+
+<div class="portfolio2">
+   <img src="assets/img/favicons/개발자누끼.png" alt="개발자누끼" style="width:25px; height:30px; margin-left:14px; margin-top:5px;" />
+   <span style="margin-left:10px; margin-top:7px;">1995년 10월 06일생</span>
+   <img src="assets/img/favicons/전화누끼.png" alt="전화누끼" style="width:25px; height:30px; margin-left:14px; margin-top:5px;" />
+   <span style="margin-left:10px; margin-top:4px;">010 - 4181 -2783</span>
+    <img src="assets/img/favicons/메일누끼.png" alt="메일누끼" style="width:40px; height:40px; margin-left:14px; margin-top:8px;" />
+   <span style="margin-left:10px; margin-top:4px;">glfn20837@gmail.com</span>
+</div>
+
+---
+
+<div class="underline-container2">
+    <span class="personal">학력사항</span>
+    <span style="margin-left:10px">Education</span>
+</div>
+
+<div class="portfolio3">
+<span style="margin-left:15px; margin-top:15px;">● 2012.03 - 2014.02ㅤ<span style="color:#e0e0e0">잠실고등학교(인문계)ㅤ<span style="background-color:#cccccc; color:#1e1e1e; border-radius:2px; border:1px solid #cccccc; font-weight:bold;">졸업</span></span></span>
+<span style="margin-left:15px;">● 2020.03 - 2024.02ㅤ<span style="color:#e0e0e0">광운대학교(산업심리학과)ㅤ<span style="background-color:#cccccc; color:#1e1e1e; border-radius:2px; border:1px solid #cccccc; font-weight:bold;">졸업</span></span></span>
+</div>
+
+---
+
+<div class="underline-container3">
+    <span class="personal">병역사항</span>
+    <span style="margin-left:10px">Military Service</span>
+</div>
+
+<div class="portfolio3">
+<span style="margin-left:15px; margin-top:15px;">● 2016.06 - 2018.03ㅤ<span style="color:#e0e0e0">7사단 육군(현역)ㅤ<span style="background-color:#cccccc; color:#1e1e1e; border-radius:2px; border:1px solid #cccccc; font-weight:bold;">군필</span></span></span>
+</div>
+
+---
+
+<div class="underline-container4">
+    <span class="personal">기술</span>
+    <span style="margin-left:10px">Skill</span>
+</div>
+
+<div class="portfolio4">
+<span style="margin-left:15px; margin-top:15px;">● 백엔드ㅤㅤㅤㅤ<span style="color: #e0e0e0">Java / Python</span></span>
+<span style="margin-left:15px; margin-top:5px;">● 프론트엔드ㅤㅤ<span style="color:#e0e0e0">HTML5 / CSS3 / JavaScript</span> </span>
+<span style="margin-left:15px; margin-top:5px;">● 프레임워크ㅤㅤ<span style="color:#e0e0e0">Spring JPA / JWT (Json web Token) / Bootstrap5 / React.js</span> </span>
+<span style="margin-left:15px; margin-top:5px;">● 데이터베이스ㅤ<span style="color:#e0e0e0">Oracle DB</span> </span>
+<span style="margin-left:15px; margin-top:5px;">● 개발도구ㅤㅤㅤ<span style="color:#e0e0e0">Eclipse / Visual Studio Code / Pycharm / SQL Developer / DB Browser / Postman</span></span>
+<span style="margin-left:15px; margin-top:5px;">● 형상관리ㅤㅤㅤ<span style="color:#e0e0e0">Git / GitHub</span></span>
+</div>
+
+---
+
+<div class="underline-container4">
+    <span class="personal">교육 사항</span>
+    <span style="margin-left:10px">Education</span>
+</div>
+
+<div class="portfolio3">
+<span style="margin-left:15px; margin-top:15px;">● 24.03.19 - 24.09.30ㅤ<span style="color:#e0e0e0; font-size:15px;">클라우드기반 AI대화형 서비스 웹개발자 양성 (JAVA / Python)ㅤ한국 ICT 인재개발원ㅤ<span style="background-color:#cccccc; color:#1e1e1e; border-radius:2px; border:1px solid #cccccc; font-weight:bold;">수료</span></span></span>
+</div>

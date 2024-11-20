@@ -8,6 +8,14 @@
     name="viewport"
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   >
+  <link rel="stylesheet" href="{{ '/assets/css/prism-a11y-dark.css' | relative_url }}">
+
+  <!-- Prism.js JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/prism.js"></script>
+
+  <!-- Prism.js Java 언어 지원 -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-java.min.js"></script>
+
 
   {%- capture seo_tags -%}
     {% seo title=false %}
@@ -97,32 +105,12 @@
     <link rel="stylesheet" href="{{ site.data.origin[type].glightbox.css | relative_url }}">
   {% endif %}
 
-  <!-- Scripts -->
+  <link rel="stylesheet" href="{{ '/assets/css/personal-project1.css' | relative_url }}">
+  <!-- JavaScript -->
 
   {% unless site.theme_mode %}
-    <script src="{{ '/assets/js/dist/theme.min.js' | relative_url }}"></script>
+    {% include mode-toggle.html %}
   {% endunless %}
-
-  {% include js-selector.html lang=lang %}
-
-  {% if jekyll.environment == 'production' %}
-    <!-- PWA -->
-    {% if site.pwa.enabled %}
-      <script
-        defer
-        src="{{ '/app.min.js' | relative_url }}?baseurl={{ site.baseurl | default: '' }}&register={{ site.pwa.cache.enabled }}"
-      ></script>
-    {% endif %}
-
-    <!-- Web Analytics -->
-    {% for analytics in site.analytics %}
-      {% capture str %}{{ analytics }}{% endcapture %}
-      {% assign platform = str | split: '{' | first %}
-      {% if site.analytics[platform].id and site.analytics[platform].id != empty %}
-        {% include analytics/{{ platform }}.html %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
 
   {% include metadata-hook.html %}
 </head>

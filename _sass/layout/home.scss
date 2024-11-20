@@ -11,7 +11,12 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: 1.25rem;
+      margin-bottom: 0rem;
+      border-bottom: 1px solid var(--main-border-color); // 일반 카드의 구분선
+      border-radius: 0;
+    }
+    &:last-child {
+      border-bottom: none; // 마지막 카드의 구분선 제거
     }
   }
 
@@ -39,7 +44,7 @@
         @extend %text-clip;
 
         color: var(--heading-color) !important;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
       }
 
       %muted {

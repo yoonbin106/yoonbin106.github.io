@@ -1,0 +1,148 @@
+.custom-summary {
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+.custom-summary:hover {
+    background-color: rgb(73, 75, 76);  /* 배경색을 변경 */
+    color: #1e1e1e;  /* 텍스트 색상 변경 */
+    border-radius: 5px;
+  }
+.centered-title {
+    display: block;
+    text-align: center;
+    font-size:40px;
+  }
+.larger-text{
+  font-size: 28px;
+}
+.toggle-content {
+  text-align: center;
+}
+.code-box{
+  border: 2px solid rgb(73, 75, 76);  /* 테두리 두께와 색상 */
+  border-radius: 5px;  /* 테두리 둥글게 */
+  overflow-y: auto;
+  max-height: 600px;
+  position:relative;
+
+}
+
+.structure{
+  background-color: #1E1E1E;
+  color: #AFB0B1;
+  padding: 10px;
+  border: 2px solid rgb(73, 75, 76);  /* 테두리 두께와 색상 */
+  border-radius: 5px;  /* 테두리 둥글게 */
+  white-space: pre-wrap; /* 줄 바꿈이 필요할 경우 자동으로 줄 바꿈 */
+  word-wrap: break-word; /* 긴 단어도 자동으로 줄 바꿈 */
+  overflow-x: auto; /* 가로로 넘칠 때 스크롤 가능 */
+  max-width: 600px;
+  font-family: Lato, sans-serif;
+}
+
+.custom-summary2 {
+  margin-left: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+.custom-summary2:hover {
+    background-color: rgb(73, 75, 76);  /* 배경색을 변경 */
+    color: #1e1e1e;  /* 텍스트 색상 변경 */
+    border-radius: 5px;
+  }
+.little-one{
+margin-bottom: 5px;
+}
+.little{
+margin-top: 15px;
+}
+.little-title{
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.focusjob{
+  text-align: center;
+  color: #cccccc;
+  }
+  .centered-title2{
+    display: block;
+    text-align: center;
+    font-size:50px;
+    font-weight: bold;
+    font-family: Lato, "Microsoft Yahei",sans-serif;
+
+  }
+
+  .larger-text2{
+  margin-top: 15px;
+  color: #cccccc;
+  font-family: Lato, "Microsoft Yahei",sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  }
+
+  .emphasize{
+    font-size: 19.5px;
+    font-weight: bold;
+    color: #cccccc;
+  }
+
+  .custom-summary3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 5px;
+    border-radius: 5px;
+
+  }
+  .custom-summary3:hover {
+      background-color: rgb(73, 75, 76);  /* 배경색을 변경 */
+      color: #1e1e1e;  /* 텍스트 색상 변경 */
+      border-radius: 5px;
+    }
+
+.custom-summary3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 5px;
+    border-radius: 5px;
+
+  }
+  .custom-summary3:hover {
+      background-color: rgb(73, 75, 76);  /* 배경색을 변경 */
+      color: #1e1e1e;  /* 텍스트 색상 변경 */
+      border-radius: 5px;
+    }
+.custom-summary4 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #cccccc;
+      color: #4d4d4d;
+      font-weight: bold;
+      width: 140px;
+
+    }
+.custom-summary4:hover {
+        background-color: rgb(73, 75, 76);  /* 배경색을 변경 */
+        color: #1e1e1e;  /* 텍스트 색상 변경 */
+        border-radius: 5px;
+      }
+

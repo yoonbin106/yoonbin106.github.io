@@ -3,28 +3,29 @@
 html {
   font-size: 16px;
 
+  // 항상 다크 모드 색상 적용
+  &:not([data-mode]),
+  &[data-mode='dark'] {
+    @include dark-scheme;
+  }
+
+  // 라이트 모드일 때도 다크 모드 색상 적용
   @media (prefers-color-scheme: light) {
     &:not([data-mode]),
     &[data-mode='light'] {
-      @include light-scheme;
-    }
-
-    &[data-mode='dark'] {
       @include dark-scheme;
     }
   }
 
+  // 다크 모드일 때 다크 모드 색상 적용
   @media (prefers-color-scheme: dark) {
     &:not([data-mode]),
     &[data-mode='dark'] {
       @include dark-scheme;
     }
-
-    &[data-mode='light'] {
-      @include light-scheme;
-    }
   }
 }
+
 
 body {
   background: var(--main-bg);
@@ -147,7 +148,7 @@ hr {
 footer {
   background-color: var(--main-bg);
   height: $footer-height;
-  border-top: 1px solid var(--main-border-color);
+  /*border-top: 1px solid var(--main-border-color);*/
 
   @extend %text-xs;
 
@@ -349,15 +350,18 @@ sup {
 }
 
 .post-preview {
-  @extend %rounded;
-
   border: 0;
-  background: var(--card-bg);
-  box-shadow: var(--card-shadow);
+  background: transparent; // 배경색을 투명하게 설정하여 박스 제거
+  box-shadow: none; // 그림자 제거
+
+  /*background: var(--card-bg);*/
+  /*box-shadow: var(--card-shadow);*/
+  /*border-bottom: 1px solid var(--main-border-color);
+  position: relative;*/
+
 
   &::before {
-    @extend %rounded;
-
+    /*@extend %rounded;*/
     content: '';
     width: 100%;
     height: 100%;
@@ -373,6 +377,36 @@ sup {
     }
   }
 }
+
+.related-post-preview {
+  @extend %rounded;
+
+  border: 0;
+  background: var(--card-bg);
+  /*box-shadow: var(--card-shadow);*/
+  /*border-bottom: 1px solid var(--main-border-color);*/
+  position: relative;
+
+
+  &::before {
+    @extend %rounded;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--card-hovor-bg);
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}
+
+
 
 main {
   line-height: 1.75;
@@ -718,6 +752,7 @@ $btn-mb: 0.5rem;
     box-shadow: var(--avatar-border-color) 0 0 0 2px;
     transform: translateZ(0); /* fixed the zoom in Safari */
 
+
     img {
       transition: transform 0.5s;
 
@@ -813,9 +848,7 @@ $btn-mb: 0.5rem;
   }
 
   .sidebar-bottom {
-    padding-left: 2rem;
-    padding-right: 1rem;
-    margin-bottom: 1.5rem;
+    margin-top: 10px;
 
     $btn-size: 1.75rem;
 
@@ -874,6 +907,10 @@ $btn-mb: 0.5rem;
   } /* .sidebar-bottom */
 } /* #sidebar */
 
+.click-here{
+  padding-bottom: 8.7px;
+  color: #818182;
+}
 @media (hover: hover) {
   #sidebar ul > li:last-child::after {
     transition: top 0.5s ease;
@@ -1511,8 +1548,7 @@ search {
     }
 
     .sidebar-bottom {
-      padding-left: 2.75rem;
-      margin-bottom: 1.75rem;
+      margin-bottom: 10px;
 
       a:not(:last-child) {
         margin-right: $sb-btn-gap-lg;

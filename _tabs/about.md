@@ -48,7 +48,7 @@ order: 4
 </div>
 
 <div class="portfolio3">
-<span style="margin-left:15px; margin-top:15px;">ㅤㅤ2016.06 - 2018.03ㅤ<span style="color:#e0e0e0">7사단 육군(현역)ㅤ<span style="background-color:#cccccc; color:#1e1e1e; border-radius:2px; border:1px solid #cccccc; font-weight:bold;">군필</span></span></span>
+<span style="margin-left:15px; margin-top:15px;">ㅤㅤ2016.06 - 2018.03ㅤ<span style="color:#e0e0e0">7사단 육군(병장)ㅤ<span style="background-color:#cccccc; color:#1e1e1e; border-radius:2px; border:1px solid #cccccc; font-weight:bold;">전역</span></span></span>
 </div>
 
 ---

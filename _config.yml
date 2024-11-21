@@ -1,5 +1,8 @@
 # The Site Configuration
 
+# Enable future posts
+future: true
+
 # Import the theme
 theme: jekyll-theme-chirpy
 

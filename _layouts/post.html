@@ -171,7 +171,9 @@ script_includes:
         {% endif %}
       </div>
 
-      {% include post-sharing.html lang=lang %}
+      {% unless page.disable_share %}
+        {% include post-sharing.html lang=lang %}
+      {% endunless %}
     </div>
     <!-- .post-tail-bottom -->
   </div>

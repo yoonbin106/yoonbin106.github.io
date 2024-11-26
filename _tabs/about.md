@@ -36,8 +36,8 @@ order: 4
 </div>
 
 <div class="portfolio3">
-<span style="margin-left:15px; margin-top:15px;">ㅤㅤ2012.03 - 2014.02ㅤ<span style="color:#e0e0e0">잠실고등학교(인문계)ㅤ<span style="background-color:#cccccc; color:#1e1e1e; border-radius:2px; border:1px solid #cccccc; font-weight:bold;">졸업</span></span></span>
-<span style="margin-left:15px;">ㅤㅤ2020.03 - 2024.02ㅤ<span style="color:#e0e0e0">광운대학교(산업심리학과)ㅤ<span style="background-color:#cccccc; color:#1e1e1e; border-radius:2px; border:1px solid #cccccc; font-weight:bold;">졸업</span></span></span>
+<span style="margin-left:15px; margin-top:15px;">ㅤㅤ2020.03 - 2024.02ㅤ<span style="color:#e0e0e0">광운대학교(산업심리학과)ㅤ<span style="background-color:#cccccc; color:#1e1e1e; border-radius:2px; border:1px solid #cccccc; font-weight:bold;">졸업</span></span></span>
+<span style="margin-left:15px;">ㅤㅤ2012.03 - 2014.02ㅤ<span style="color:#e0e0e0">잠실고등학교(인문계)ㅤ<span style="background-color:#cccccc; color:#1e1e1e; border-radius:2px; border:1px solid #cccccc; font-weight:bold; margin-left:33px;">졸업</span></span></span>
 </div>
 
 ---

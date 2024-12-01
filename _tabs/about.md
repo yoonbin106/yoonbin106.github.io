@@ -8,7 +8,7 @@ order: 4
   <img src="assets/img/favicons/증명사진누끼.png" alt="증명사진누끼" style="border:3px solid #cccccc" />
   <div class="text-wrapper">
     <span style=" margin-left:25px; font-size:50px; color:white; font-weight:bold;">윤성빈<span style="font-size:25px; margin-left:10px; color:#cccccc; font-weight:normal;">Yoon Seong-Bin</span></span>
-    <span style="margin-left:25px; margin-top:10px; font-size:30px; color:rgb(138, 180, 248); font-weight:bold;">ㅤ"맡은 일은 밤을 새서라도 끝내겠습니다!"</span>
+    <span style="margin-left:25px; margin-top:10px; font-size:26px; color:rgb(138, 180, 248); font-weight:bold;">ㅤ"열정을 가지고 성장하는 개발자가 되고 싶습니다!"</span>
   </div>
 </div>
 

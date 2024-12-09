@@ -25,7 +25,7 @@ order: 4
    <img src="assets/img/favicons/전화누끼.png" alt="전화누끼" style="width:25px; height:30px; margin-left:14px; margin-top:5px;" />
    <span style="margin-left:10px; margin-top:4px;">010 - 4181 -2783</span>
     <img src="assets/img/favicons/메일누끼.png" alt="메일누끼" style="width:40px; height:40px; margin-left:14px; margin-top:8px;" />
-   <span style="margin-left:10px; margin-top:4px;">glfn20837@gmail.com</span>
+   <span style="margin-left:10px; margin-top:4px;">glfn30832@naver.com</span>
 </div>
 
 ---

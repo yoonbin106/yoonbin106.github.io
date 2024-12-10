@@ -47,7 +47,7 @@ order: 4
 
 ㅤ<span style="background-color:#cccccc; color:#1e1e1e; border-radius:2px; border:1px solid #cccccc; font-weight:bold;">개인 프로젝트</span>
 
- ㅤㅤ(1) Oracle DB + JAVA 주소록 관리 프로그램
+ ㅤㅤ(1) JAVA 주소록 관리 (CRUD) 프로그램
 
  ㅤㅤ(2) JWT 토큰 기반 회원제 게시판 Maven Project
 

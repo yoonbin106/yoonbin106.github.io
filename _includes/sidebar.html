@@ -5,7 +5,6 @@
 <div class="falling-stars">
   <!-- JavaScript가 별을 동적으로 추가하도록 설정 -->
 </div>
-
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const fallingStars = document.querySelector('.falling-stars');
@@ -41,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // 일정 간격으로 별을 생성 (100ms마다 생성)
   setInterval(createStar, 100); // 100ms마다 새로운 별을 생성
 });
-
 </script>
+
   <header class="profile-wrapper">
     <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
       {%- if site.avatar != empty and site.avatar -%}

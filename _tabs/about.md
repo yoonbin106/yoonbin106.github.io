@@ -22,8 +22,8 @@ order: 4
 <div class="portfolio4">
 <span style="margin-left:15px; margin-top:15px;">ㅤㅤ백엔드ㅤㅤㅤㅤㅤ<span style="color: #e0e0e0">Java / Python</span></span>
 <span style="margin-left:15px; margin-top:5px;">ㅤㅤ프론트엔드ㅤㅤㅤ<span style="color:#e0e0e0">HTML5 / CSS3 / JavaScript</span> </span>
-<span style="margin-left:15px; margin-top:5px;">ㅤㅤ프레임워크ㅤㅤㅤ<span style="color:#e0e0e0">Spring JPA / JWT (Json web Token) / Bootstrap5 / React.js</span> </span>
-<span style="margin-left:15px; margin-top:5px;">ㅤㅤ데이터베이스ㅤㅤ<span style="color:#e0e0e0">Oracle DB</span> </span>
+<span style="margin-left:15px; margin-top:5px;">ㅤㅤ프레임워크ㅤㅤㅤ<span style="color:#e0e0e0">Spring JPA / Bootstrap5 / React / Node.js / Next.js / Nest.js</span> </span>
+<span style="margin-left:15px; margin-top:5px;">ㅤㅤ데이터베이스ㅤㅤ<span style="color:#e0e0e0">Oracle DB / MySQL</span> </span>
 <span style="margin-left:15px; margin-top:5px;">ㅤㅤ개발도구ㅤㅤㅤㅤ<span style="color:#e0e0e0">Eclipse / Visual Studio Code / Pycharm / SQL Developer / DB Browser / Postman</span></span>
 <span style="margin-left:15px; margin-top:5px;">ㅤㅤ형상관리ㅤㅤㅤㅤ<span style="color:#e0e0e0">Git / GitHub</span></span>
 </div>

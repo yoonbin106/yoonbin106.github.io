@@ -5,7 +5,7 @@
 <div class="falling-stars">
   <!-- JavaScript가 별을 동적으로 추가하도록 설정 -->
 </div>
-<script src="{{ '/assets/js/falling-stars.js' | relative_url }}"></script>
+
   <header class="profile-wrapper">
     <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
       {%- if site.avatar != empty and site.avatar -%}
@@ -77,5 +77,17 @@
       {% endfor %}
     </ul>
   </nav>
+
+ <div class="stop-animation-wrapper">
+  <div class="snow-button-container">
+    <img src="{{ 'assets/img/favicons/트리와눈사람.png' | relative_url }}" alt="흰색나무" class="img-fluid">
+    <button id="toggle-snowing" class="btn snow-button">
+      Stop Snowing !
+    </button>
+  </div>
+</div>
+
+
 </aside>
+<script src="{{ '/assets/js/snow.js' | relative_url }}"></script>
 <!-- #sidebar -->

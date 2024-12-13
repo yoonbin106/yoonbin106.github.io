@@ -248,3 +248,65 @@ margin-top: 15px;
   margin-bottom: 0;
 }
 
+.stop-animation-wrapper {
+  display: flex; /* flexbox 사용 */
+  align-items: center; /* 세로로 중앙 정렬 */
+  justify-content: flex-start; /* 좌측 정렬 */
+  width: 100%;
+  height: 180px; /* 사이드바의 고정 높이 설정 */
+
+}
+
+.snow-button-container {
+  display: flex;
+  align-items: center; /* 세로로 중앙 정렬 */
+  justify-content: flex-start; /* 좌측 정렬 */
+  margin-left: 10px;
+}
+
+.snow-button {
+  background-color: gray;
+  color: black;
+  border: none;
+  padding: 5px 10px; /* 패딩 설정 */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  margin-left: -13px; /* 이미지와 버튼 간의 간격 설정 */
+  margin-bottom: 85px;
+  border-radius: 10px; /* 둥근 모서리로 말풍선 효과 */
+  position: relative; /* 말풍선 꼬리를 위한 상대 위치 지정 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.snow-button:hover {
+  background-color: #6c757d;
+  color: white;
+  transform: scale(1.05); /* 버튼 크기 키움 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 왼쪽 아래 뾰족한 말풍선 꼬리 부분 */
+.snow-button::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* 버튼 아래로 위치 조정 */
+  left: -1%; /* 왼쪽에서 위치 조정 */
+  width: 0;
+  height: 0;
+  transform: rotate(150deg); /* 수평으로 가운데 정렬 후 오른쪽으로 회전 */
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid gray; /* 말풍선 꼬리의 색상 */
+}
+
+.snow-button-container img {
+  width: 40%; /* 이미지 크기 설정 */
+  height: auto;
+  object-fit: cover; /* 이미지 비율 유지 */
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+
+

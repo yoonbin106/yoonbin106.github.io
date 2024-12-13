@@ -924,7 +924,7 @@ $btn-mb: 0.5rem;
     background-color: #fff;
     border-radius: 50%; /* 원 모양 */
     opacity: 0;
-    animation: fall 20s infinite linear, drift 6s infinite ease-in-out; /* 속도 더 느리게, 이동 경로 추가 */
+    animation: fall 10s infinite linear, drift 6s infinite ease-in-out; /* 속도 더 느리게, 이동 경로 추가 */
     animation-delay: var(--star-delay);
     left: calc(var(--star-x) * 100%);
     top: calc(var(--star-y) * 100%); /* 시작 위치를 y축도 랜덤하게 설정 */

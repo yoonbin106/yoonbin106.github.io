@@ -276,7 +276,8 @@ margin-top: 15px;
   margin-bottom: 85px;
   border-radius: 10px; /* 둥근 모서리로 말풍선 효과 */
 }
-.snow-button:hover {
+.snow-button:hover,
+.snow-button.active {
   background-color: rgb(194, 194, 194);
   color: white;
   transform: scale(1.05); /* 버튼 크기 키움 */
@@ -300,6 +301,7 @@ margin-top: 15px;
   color: white;
   transform: scale(1.05); /* 버튼 크기 키움 */
 }
+
 .snow-button-container img {
   width: 40%; /* 이미지 크기 설정 */
   height: auto;

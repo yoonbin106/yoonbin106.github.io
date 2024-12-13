@@ -72,10 +72,21 @@ document.addEventListener('DOMContentLoaded', function () {
     animationPaused = !animationPaused; // 상태 반전
   });
 
-  // 마우스를 클릭하고 있을 때 배경색 유지
-  button.addEventListener('mousedown', function () {
-    button.classList.add('active'); // 클릭 상태에서 배경색 유지
+   // 모바일 및 데스크탑에서 클릭 시 배경색 유지
+   button.addEventListener('mousedown', function () {
+    button.classList.add('active'); // 마우스 클릭 시 active 클래스 추가
   });
+  button.addEventListener('mouseup', function () {
+    button.classList.add('active'); // 마우스 클릭을 떼면 active 클래스 제거
+  });
+
+  button.addEventListener('touchstart', function () {
+    button.classList.add('active'); // 터치 시 active 클래스 추가
+  });
+  button.addEventListener('touchend', function () {
+    button.classList.add('active'); // 터치가 끝날 때 active 클래스 제거
+  });
+
   // 페이지 로드 시 눈 내리기 시작
   startCreatingStars(); // 페이지 로드 시 별 생성 시작
 });

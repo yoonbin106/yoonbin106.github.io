@@ -278,9 +278,9 @@ margin-top: 15px;
 }
 
 .snow-button:hover {
-  background-color: #6c757d;
+  background-color: gray;
   color: white;
-  transform: scale(1.05); /* 버튼 크기 키움 */
+  transform: scale(1.1); /* 버튼 크기 키움 */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 

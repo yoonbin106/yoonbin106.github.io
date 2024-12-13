@@ -76,15 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
   button.addEventListener('mousedown', function () {
     button.classList.add('active'); // 클릭 상태에서 배경색 유지
   });
-
-  button.addEventListener('mouseup', function () {
-    button.classList.remove('active'); // 클릭 해제 시 배경색 원상복구
-  });
-
-  button.addEventListener('mouseleave', function () {
-    button.classList.remove('active'); // 버튼이 영역을 벗어나면 배경색 원상복구
-  });
-
   // 페이지 로드 시 눈 내리기 시작
   startCreatingStars(); // 페이지 로드 시 별 생성 시작
 });

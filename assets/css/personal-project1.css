@@ -265,21 +265,24 @@ margin-top: 15px;
 }
 
 .snow-button {
-  background-color: gray;
-  color: black;
+  background-color: rgb(157, 157, 157);
+  color: rgb(56, 56, 56);
   border: none;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
   padding: 5px 10px; /* 패딩 설정 */
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   margin-left: -13px; /* 이미지와 버튼 간의 간격 설정 */
   margin-bottom: 85px;
   border-radius: 10px; /* 둥근 모서리로 말풍선 효과 */
   position: relative; /* 말풍선 꼬리를 위한 상대 위치 지정 */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
 }
 
 .snow-button:hover {
-  background-color: gray;
+  background-color: rgb(157, 157, 157);
   color: white;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
   transform: scale(1.1); /* 버튼 크기 키움 */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -295,7 +298,7 @@ margin-top: 15px;
   transform: rotate(150deg); /* 수평으로 가운데 정렬 후 오른쪽으로 회전 */
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 10px solid gray; /* 말풍선 꼬리의 색상 */
+  border-top: 10px solid  rgb(157, 157, 157); /* 말풍선 꼬리의 색상 */
 }
 
 .snow-button-container img {

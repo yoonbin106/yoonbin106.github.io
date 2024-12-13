@@ -73,18 +73,15 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
    // 모바일 및 데스크탑에서 클릭 시 배경색 유지
-   button.addEventListener('mousedown', function () {
+   button.addEventListener('touchstart', function () {
     button.classList.add('active');
   });
-  button.addEventListener('mouseup', function () {
-    button.classList.add('active');
+   button.addEventListener('touchend', function () {
+    button.classList.remove('active');
   });
 
-  button.addEventListener('touchstart', function () {
-    button.classList.add('active');
-  });
-  button.addEventListener('touchend', function () {
-    button.classList.add('active');
+  button.addEventListener('mouseup', function () {
+    button.classList.remove('active');
   });
 
   // 페이지 로드 시 눈 내리기 시작

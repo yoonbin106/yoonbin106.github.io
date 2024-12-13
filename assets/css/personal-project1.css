@@ -276,12 +276,16 @@ margin-top: 15px;
   margin-bottom: 85px;
   border-radius: 10px; /* 둥근 모서리로 말풍선 효과 */
 }
-.snow-button:hover {
-  background-color: rgb(194, 194, 194);
+.snow-button:hover{
+  background-color: rgb(194, 194, 194) !important;
+  color: white !important;
+  transform: scale(1.05); /* 버튼 크기 키움 */
+}
+.snow-button.active{
+  background-color: rgb(194, 194, 194) ;
   color: white;
   transform: scale(1.05); /* 버튼 크기 키움 */
 }
-
 /* 왼쪽 아래 뾰족한 말풍선 꼬리 부분 */
 .snow-button::after {
   content: '';
@@ -295,12 +299,12 @@ margin-top: 15px;
   border-right: 8px solid transparent;
   border-top: 10px solid rgb(194, 194, 194); /* 말풍선 꼬리의 색상 */
 }
-.snow-button.active:hover{
-  background-color: rgb(194, 194, 194);
-  color: white;
+
+.snow-button:active {
+  background-color: rgb(194, 194, 194); /* 배경색 유지 */
+  color: white; /* 텍스트 색상 */
   transform: scale(1.05); /* 버튼 크기 키움 */
 }
-
 .snow-button-container img {
   width: 40%; /* 이미지 크기 설정 */
   height: auto;

@@ -276,12 +276,6 @@ margin-top: 15px;
   border-radius: 10px; /* 둥근 모서리로 말풍선 효과 */
 }
 
-.snow-button.active {
-  background-color: rgb(194, 194, 194);
-  color: white;
-  transform: scale(1.05); /* 버튼 크기 키움 */
-}
-
 .snow-button::after {
   content: '';
   position: absolute;
@@ -293,6 +287,12 @@ margin-top: 15px;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 10px solid rgb(194, 194, 194); /* 말풍선 꼬리의 색상 */
+}
+
+.snow-button.active {
+  background-color: rgb(194, 194, 194);
+  color: white;
+  transform: scale(1.05); /* 버튼 크기 키움 */
 }
 
 

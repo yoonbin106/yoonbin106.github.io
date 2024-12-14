@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const numberOfStars = 150; // 원하는 만큼 별의 개수를 조절하세요
   let animationPaused = false; // 애니메이션 상태 저장
   let starInterval; // 별 생성 주기 변수
-  let isDesktop = window.innerWidth >= 768;
+  let isDesktop = !isTouchDevice();
 
   // 별 생성 함수
   function createStar() {
@@ -99,8 +99,12 @@ document.addEventListener('DOMContentLoaded', function () {
     button.classList.remove('active');
   });
 
+  function isTouchDevice() {
+    return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  }
+
   function handleResize() {
-    const newIsDesktop = window.innerWidth >= 768 && !isTouchDevice();
+    const newIsDesktop = !isTouchDevice();
     if (newIsDesktop !== isDesktop) {
       isDesktop = newIsDesktop;
       if (isDesktop) {

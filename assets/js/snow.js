@@ -72,6 +72,21 @@ document.addEventListener('DOMContentLoaded', function () {
     animationPaused = !animationPaused; // 상태 반전
   });
 
+  // 데스크탑에서 hover 효과를 JavaScript로 구현
+  if (window.innerWidth >= 768) { // 화면 크기가 768px 이상일 때만 hover 효과 적용
+    button.addEventListener('mouseenter', function() {
+      button.style.backgroundColor = 'rgb(194, 194, 194)';
+      button.style.color = 'white';
+      button.style.transform = 'scale(1.05)';
+    });
+
+    button.addEventListener('mouseleave', function() {
+      button.style.backgroundColor = ''; // 원래 배경색으로 되돌리기
+      button.style.color = ''; // 원래 텍스트 색상으로 되돌리기
+      button.style.transform = ''; // 원래 크기로 되돌리기
+    });
+  }
+
     // 모바일 및 데스크탑에서 클릭 시 배경색 유지
   button.addEventListener('touchstart', function () {
     button.classList.add('active'); // 터치 시작 시 active 클래스 추가

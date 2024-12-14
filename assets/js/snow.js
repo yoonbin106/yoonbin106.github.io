@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const fallingStars = document.querySelector('.falling-stars');
-  const button = document.getElementById('toggle-snowing'); // 버튼 선택
+  const button = document.getElementById('toggle-snowing');
 
   if (!fallingStars || !button) {
     console.error('필요한 요소가 없습니다.');
@@ -10,96 +10,112 @@ document.addEventListener('DOMContentLoaded', function () {
   const numberOfStars = 150; // 원하는 만큼 별의 개수를 조절하세요
   let animationPaused = false; // 애니메이션 상태 저장
   let starInterval; // 별 생성 주기 변수
+  let isDesktop = window.innerWidth >= 768;
 
   // 별 생성 함수
   function createStar() {
     const star = document.createElement('div');
     star.classList.add('star');
 
-    // 랜덤한 위치와 애니메이션 속성 값 설정
-    const randomX = Math.random(); // 0에서 1 사이의 랜덤 값
+    const randomX = Math.random();
     const randomY = Math.random();
-    const randomDelay = Math.random() * 2; // 0에서 2초 사이의 랜덤 딜레이
+    const randomDelay = Math.random() * 2;
+    const randomDuration = 5 + Math.random() * 5;
 
-    // 별의 속도를 더 느리게 설정
-    const randomDuration = 5 + Math.random() * 5; // 5초에서 10초 사이의 랜덤 애니메이션 시간
-
-    // 스타일 속성에 랜덤 값 적용
     star.style.setProperty('--star-x', randomX);
     star.style.setProperty('--star-y', randomY);
     star.style.animationDelay = `${randomDelay}s`;
-    star.style.animationDuration = `${randomDuration}s`; // 속도를 느리게 설정
+    star.style.animationDuration = `${randomDuration}s`;
 
-    // fallingStars div에 star 추가
     fallingStars.appendChild(star);
 
-    // 애니메이션이 끝난 후 별을 제거
     setTimeout(() => {
       star.remove();
-    }, (randomDuration + randomDelay + 5) * 1000); // 애니메이션 시간 후 제거
+    }, (randomDuration + randomDelay + 5) * 1000);
   }
 
-  // 별 생성 시작
   function startCreatingStars() {
-    starInterval = setInterval(createStar, 100); // 100ms마다 새로운 별을 생성
+    starInterval = setInterval(createStar, 100);
   }
 
-  // 별 생성 중지
   function stopCreatingStars() {
-    clearInterval(starInterval); // 별 생성 주기 멈춤
+    clearInterval(starInterval);
   }
 
-  // 버튼 클릭 시 애니메이션 상태 변경
   button.addEventListener('click', function () {
     if (animationPaused) {
-      // 애니메이션 재개
       const stars = fallingStars.querySelectorAll('.star');
       stars.forEach(star => {
-        star.style.animationPlayState = 'running'; // CSS 애니메이션 실행
+        star.style.animationPlayState = 'running';
       });
-      startCreatingStars(); // 새로운 별 생성 시작
+      startCreatingStars();
       button.innerText = 'Stop Snowing !';
     } else {
-      // 애니메이션 중지
       const stars = fallingStars.querySelectorAll('.star');
       stars.forEach(star => {
-        star.style.animationPlayState = 'paused'; // CSS 애니메이션 중지
+        star.style.animationPlayState = 'paused';
       });
-      stopCreatingStars(); // 별 생성 중지
+      stopCreatingStars();
       button.innerText = 'Let it Snow !';
     }
 
-    animationPaused = !animationPaused; // 상태 반전
+    animationPaused = !animationPaused;
   });
 
-  // 데스크탑에서 hover 효과를 JavaScript로 구현
-  if (window.innerWidth >= 768) { // 화면 크기가 768px 이상일 때만 hover 효과 적용
-    button.addEventListener('mouseenter', function() {
-      button.style.backgroundColor = 'rgb(194, 194, 194)';
-      button.style.color = 'white';
-      button.style.transform = 'scale(1.05)';
-    });
-
-    button.addEventListener('mouseleave', function() {
-      button.style.backgroundColor = ''; // 원래 배경색으로 되돌리기
-      button.style.color = ''; // 원래 텍스트 색상으로 되돌리기
-      button.style.transform = ''; // 원래 크기로 되돌리기
-    });
+  function addDesktopHoverEffect() {
+    button.addEventListener('mouseenter', desktopHoverEnter);
+    button.addEventListener('mouseleave', desktopHoverLeave);
   }
 
-    // 모바일 및 데스크탑에서 클릭 시 배경색 유지
+  function removeDesktopHoverEffect() {
+    button.removeEventListener('mouseenter', desktopHoverEnter);
+    button.removeEventListener('mouseleave', desktopHoverLeave);
+    button.style.backgroundColor = '';
+    button.style.color = '';
+    button.style.transform = '';
+  }
+
+  function desktopHoverEnter() {
+    button.style.backgroundColor = 'rgb(194, 194, 194)';
+    button.style.color = 'white';
+    button.style.transform = 'scale(1.05)';
+  }
+
+  function desktopHoverLeave() {
+    button.style.backgroundColor = '';
+    button.style.color = '';
+    button.style.transform = '';
+  }
+
   button.addEventListener('touchstart', function () {
-    button.classList.add('active'); // 터치 시작 시 active 클래스 추가
+    button.classList.add('active');
   });
 
   button.addEventListener('touchend', function () {
-    button.classList.remove('active'); // 터치 끝나면 active 클래스 제거
+    button.classList.remove('active');
   });
 
   button.addEventListener('mouseup', function () {
-    button.classList.remove('active'); // 마우스 업 시 active 클래스 제거
+    button.classList.remove('active');
   });
 
-  // 페이지 로드 시 눈 내리기 시작
-  startCreatingStars(); // 페이지 로드 시 별 생성 시작
+  function handleResize() {
+    const newIsDesktop = window.innerWidth >= 768;
+    if (newIsDesktop !== isDesktop) {
+      isDesktop = newIsDesktop;
+      if (isDesktop) {
+        addDesktopHoverEffect();
+      } else {
+        removeDesktopHoverEffect();
+      }
+    }
+  }
+
+  window.addEventListener('resize', handleResize);
+
+  if (isDesktop) {
+    addDesktopHoverEffect();
+  }
+
+  startCreatingStars();
 });

@@ -74,22 +74,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // 모바일 및 데스크탑에서 클릭 시 배경색 유지
   button.addEventListener('touchstart', function () {
-    button.classList.add('active'); // 터치 시작 시 active 클래스 추가
+    button.classList.add('active');
   });
 
   button.addEventListener('touchend', function () {
-    button.classList.remove('active'); // 터치 끝나면 active 클래스 제거
+    button.classList.remove('active');
   });
 
   button.addEventListener('mouseup', function () {
-    button.classList.remove('active'); // 마우스 업 시 active 클래스 제거
+    button.classList.remove('active');
   });
 
   button.addEventListener('mouseenter', function () {
-    button.classList.add('active'); // 마우스 업 시 active 클래스 제거
+    button.classList.add('active');
   });
   button.addEventListener('mouseleave', function () {
-    button.classList.remove('active'); // 마우스 업 시 active 클래스 제거
+    button.classList.remove('active');
   });
 
 

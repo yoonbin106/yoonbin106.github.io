@@ -3,8 +3,11 @@
   cursor: pointer;
   transition: all 0.3s ease;
   padding: 5px;
+  border: 1px solid rgb(73, 75, 76);
   border-radius: 5px;
   color: #cccccc;
+  margin-bottom: 10px;
+  max-width: 775px;
 
 }
 .custom-summary:hover {
@@ -12,6 +15,21 @@
     color: #1e1e1e;  /* 텍스트 색상 변경 */
     border-radius: 5px;
   }
+  .custom-summary2 {
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(73, 75, 76);
+    margin-bottom: 10px;
+    max-width: 775px;
+  }
+  .custom-summary2:hover {
+      background-color: rgb(73, 75, 76);  /* 배경색을 변경 */
+      color: #1e1e1e;  /* 텍스트 색상 변경 */
+      border-radius: 5px;
+    }
 .centered-title {
     display: block;
     text-align: center;
@@ -45,19 +63,7 @@
   font-family: Lato, sans-serif;
 }
 
-.custom-summary2 {
-  margin-left: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  padding: 5px;
-  border-radius: 5px;
 
-}
-.custom-summary2:hover {
-    background-color: rgb(73, 75, 76);  /* 배경색을 변경 */
-    color: #1e1e1e;  /* 텍스트 색상 변경 */
-    border-radius: 5px;
-  }
 .little-one{
 margin-bottom: 5px;
 }
@@ -69,6 +75,8 @@ margin-top: 15px;
   margin-left: 10px;
   font-weight: bold;
   color: #cccccc;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .focusjob{
@@ -138,6 +146,7 @@ margin-top: 15px;
       color: #4d4d4d;
       font-weight: bold;
       width: 140px;
+      margin-left: 20px;
 
     }
 .custom-summary4:hover {
@@ -167,6 +176,11 @@ margin-top: 15px;
   font-weight: bold;
   color: #cccccc;
 }
+.personal2{
+  font-size: 20px;
+  font-weight: bold;
+  color: #cccccc;
+}
 
 .underline-container1{
   margin-left: 15px;
@@ -191,6 +205,12 @@ margin-top: 15px;
   display: inline-block;
   margin-top: 5px;
   width: 270px;
+}
+.underline-container5{
+  margin-left: 15px;
+  display: inline-block;
+  margin-top: 5px;
+  width: 600px;
 }
 .portfolio2 {
   display: flex;

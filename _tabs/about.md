@@ -40,6 +40,17 @@ order: 4
 
 ---
 
+<div class="underline-container4">
+    <span class="personal">수상</span>
+    <span style="margin-left:10px">Awards</span>
+</div>
+<div class="portfolio3">
+<span style="margin-left:15px; margin-top:15px;">ㅤㅤ24.09.30ㅤ<span style="color:#e0e0e0; font-size:15px;">기업실무 프로젝트 - 한국 ICT 기술협회ㅤ<span style="background-color:#cccccc; color:#1e1e1e; border-radius:2px; border:1px solid #cccccc; font-weight:bold;">최우수상</span></span></span>
+<span style="margin-left:15px; margin-top:15px;">ㅤㅤ24.09.30ㅤ<span style="color:#e0e0e0; font-size:15px;">한국 ICT 인재개발원 훈련과정 100% 출석상ㅤ<span style="background-color:#cccccc; color:#1e1e1e; border-radius:2px; border:1px solid #cccccc; font-weight:bold;">특모범상</span></span></span>
+</div>
+
+---
+
 <div class="underline-container4" style="margin-bottom:10px">
     <span class="personal">프로젝트</span>
     <span style="margin-left:10px">Project</span>

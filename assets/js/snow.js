@@ -100,13 +100,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   function handleResize() {
-    const newIsDesktop = window.innerWidth >= 768;
-    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
-    // 터치 디바이스인 경우 데스크톱 모드에서도 호버 효과를 추가하지 않음
+    const newIsDesktop = window.innerWidth >= 768 && !isTouchDevice();
     if (newIsDesktop !== isDesktop) {
       isDesktop = newIsDesktop;
-      if (isDesktop && !isTouchDevice) {
+      if (isDesktop) {
         addDesktopHoverEffect();
       } else {
         removeDesktopHoverEffect();

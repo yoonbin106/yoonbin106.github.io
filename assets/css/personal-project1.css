@@ -230,7 +230,7 @@ margin-top: 15px;
 .copy-button {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 70px;
   padding: 5px 10px;
   font-size: 12px;
   background-color: #4CAF50;
@@ -239,11 +239,35 @@ margin-top: 15px;
   border-radius: 5px;
   cursor: pointer;
   z-index: 10;
+  font-family: Lato, sans-serif;
+  font-weight: bold;
 }
 
 .copy-button:hover {
   background-color: #45a049;
 }
+
+.close-button {
+  position: absolute;
+  top: 10px;  /* 상단에서 10px */
+  right: 10px;  /* 우측에서 10px */
+  padding: 5px 10px;
+  font-size: 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+  font-family: Lato, sans-serif;
+  display: block;  /* 항상 보이게 */
+  font-weight: bold;
+}
+
+.close-button:hover {
+  background-color: #d32f2f;
+}
+
 
 .info-box {
   background-color: #1e1e2f; /* 어두운 배경색 */
@@ -338,7 +362,7 @@ margin-top: 15px;
   display: flex;
   justify-content: center; /* 좌측 정렬 */
   gap: 10px; /* 각 요소 사이의 간격을 10px로 설정 */
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-top: -20px;
 
 }

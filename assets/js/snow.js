@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   const fallingStars = document.querySelector('.falling-stars');
   const button = document.getElementById('toggle-snowing'); // 버튼 선택
+  const santa = document.querySelector('.santa-animation'); // 산타 이미지 선택
 
-  if (!fallingStars || !button) {
+  if (!fallingStars || !button || !santa) {
     console.error('필요한 요소가 없습니다.');
     return;
   }
@@ -10,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const numberOfStars = 150; // 원하는 만큼 별의 개수를 조절하세요
   let animationPaused = false; // 애니메이션 상태 저장
   let starInterval; // 별 생성 주기 변수
+  let sparkleInterval; // 산타 깜빡임 효과 주기 변수
 
   // 별 생성 함수
   function createStar() {
@@ -49,6 +51,43 @@ document.addEventListener('DOMContentLoaded', function () {
     clearInterval(starInterval); // 별 생성 주기 멈춤
   }
 
+  // 산타 애니메이션 시작
+  function startSantaAnimation() {
+    santa.style.animationPlayState = 'running'; // 산타 애니메이션 시작
+  }
+
+  // 산타 애니메이션 중지
+  function stopSantaAnimation() {
+    santa.style.animationPlayState = 'paused'; // 산타 애니메이션 중지
+  }
+
+  // 산타 깜빡임 효과 시작
+  function startSparkleEffect() {
+    let opacityValue = 0;  // 시작 투명도 값 (낮은 값으로 시작)
+    let increasing = true;    // 투명도가 증가 중인지 여부
+
+    sparkleInterval = setInterval(function() {
+      if (increasing) {
+        opacityValue += 0.2; // 투명도 빠르게 증가
+        if (opacityValue >= 1) {
+          increasing = false; // 최대 투명도에 도달하면 감소 시작
+        }
+      } else {
+        opacityValue -= 0.2; // 투명도 빠르게 감소
+        if (opacityValue <= 0) {
+          increasing = true;  // 최소 투명도에 도달하면 증가 시작
+        }
+      }
+      santa.style.opacity = opacityValue; // 투명도 업데이트
+    },200);
+  }
+
+  // 산타 깜빡임 효과 멈추기
+  function stopSparkleEffect() {
+    clearInterval(sparkleInterval); // 깜빡임 효과 멈추기
+    santa.style.opacity = 1; // 투명도 초기화
+  }
+
   // 버튼 클릭 시 애니메이션 상태 변경
   button.addEventListener('click', function () {
     if (animationPaused) {
@@ -58,6 +97,8 @@ document.addEventListener('DOMContentLoaded', function () {
         star.style.animationPlayState = 'running'; // CSS 애니메이션 실행
       });
       startCreatingStars(); // 새로운 별 생성 시작
+      startSantaAnimation(); // 산타 애니메이션 재개
+      startSparkleEffect(); // 산타 깜빡임 재개
       button.innerText = 'Stop Snowing !';
     } else {
       // 애니메이션 중지
@@ -66,6 +107,8 @@ document.addEventListener('DOMContentLoaded', function () {
         star.style.animationPlayState = 'paused'; // CSS 애니메이션 중지
       });
       stopCreatingStars(); // 별 생성 중지
+      stopSantaAnimation(); // 산타 애니메이션 중지
+      stopSparkleEffect(); // 산타 깜빡임 중지
       button.innerText = 'Let it Snow !';
     }
 
@@ -92,7 +135,8 @@ document.addEventListener('DOMContentLoaded', function () {
     button.classList.remove('active');
   });
 
-
   // 페이지 로드 시 눈 내리기 시작
   startCreatingStars(); // 페이지 로드 시 별 생성 시작
+  startSantaAnimation(); // 페이지 로드 시 산타 애니메이션 시작
+  startSparkleEffect(); // 페이지 로드 시 산타 깜빡임 효과 시작
 });

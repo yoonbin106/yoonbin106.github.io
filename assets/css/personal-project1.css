@@ -402,5 +402,21 @@ margin-top: 15px;
 }
 
 
+/* 움직이는 산타 이미지 래퍼 */
+.flying-santa-wrapper {
+  position: absolute; /* 공간 차지 X */
+  top: 0;
+  left: 0;
+  width: 100%; /* 사이드바 너비를 기준으로 */
+  height: 100%; /* 사이드바 높이를 기준으로 */
+  pointer-events: none; /* 클릭 이벤트를 방해하지 않음 */
+  z-index: 0; /* 다른 요소보다 뒤에 배치 */
+}
 
+/* 산타 이미지 애니메이션 */
+.santa-animation {
+  position: absolute; /* 이미지 공간 차지 X */
+  width: 300px; /* 산타 이미지 크기 */
+  pointer-events: none; /* 마우스 이벤트 무시 */
+}
 

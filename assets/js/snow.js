@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       } else {
         opacityValue -= 0.2; // 투명도 빠르게 감소
-        if (opacityValue <= 0.1) {
+        if (opacityValue <= 0) {
           increasing = true;  // 최소 투명도에 도달하면 증가 시작
         }
       }

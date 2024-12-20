@@ -169,6 +169,7 @@ margin-top: 15px;
 .text-wrapper {
   display: flex;
   flex-direction: column; /* 텍스트를 세로로 정렬 */
+  margin-top: -80px;
 }
 
 .personal{
@@ -366,6 +367,15 @@ margin-top: 15px;
   margin-top: -20px;
 
 }
+.github-links-container3 {
+  display: flex;
+  justify-content: center; /* 좌측 정렬 */
+  gap: 10px; /* 각 요소 사이의 간격을 10px로 설정 */
+  margin-bottom: 40px;
+  margin-top: -20px;
+  margin-left:-250px;
+
+}
 
 .github-link-box {
   display: flex;
@@ -379,6 +389,20 @@ margin-top: 15px;
   transition: background-color 0.3s, color 0.3s;
   width: 250px;
   font-family: Lato, sans-serif;
+}
+.github-link-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #cccccc;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: 150px;
+  font-family: Lato, sans-serif;
+  margin-top: -50px;
 }
 
 .github-icon {
@@ -398,6 +422,14 @@ margin-top: 15px;
 }
 
 .github-link-box:hover .github-text {
+  color: white;
+}
+
+.github-link-box2:hover {
+  background-color: #007BFF;
+}
+
+.github-link-box2:hover .github-text {
   color: white;
 }
 

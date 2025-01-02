@@ -13,7 +13,7 @@ order: 4
 </div>
 
 <div class="github-links-container3">
-  <div class="github-link-box2" onclick="window.open('https://github.com/yoonbin106/interview-front/tree/main/src/components/resume', '_blank')">
+  <div class="github-link-box2" onclick="window.open('https://github.com/yoonbin106', '_blank')">
     <img src="/assets/img/favicons/깃허브.png" alt="깃허브 링크" class="github-icon">
     <span class="github-text">Github Link</span>
   </div>
